@@ -44,11 +44,15 @@ export default function Home() {
           >
             <h3>Deploy &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Instantly deploy your Next.js site to a public URL with Vercel. yay
             </p>
           </a>
         </div>
       </main>
+
+      <div>
+        <slice-zone />
+      </div>
 
       <footer className={styles.footer}>
         <a
