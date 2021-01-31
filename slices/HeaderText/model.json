@@ -14,25 +14,29 @@
         "portrait": {
           "config": {
             "label": "Portrait",
-            "constraint": {},
+            "constraint": {
+              "width": 180,
+              "height": 180
+            },
             "thumbnails": []
           },
           "type": "Image"
         },
         "title": {
-          "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
-          }
+            "placeholder": "Hi I'm ...",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
         },
         "slogan": {
           "config": {
             "label": "Slogan",
             "placeholder": "A nice description of your feature",
             "allowTargetBlank": true,
-            "single": "paragraph"
+            "single": "heading1"
           },
           "type": "StructuredText"
         },
@@ -44,6 +48,14 @@
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           },
           "type": "StructuredText"
+        },
+        "contact": {
+          "config": {
+            "label": "Contact",
+            "placeholder": "",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
         }
       },
       "items": {}

@@ -10,25 +10,59 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "WorkGallery",
-      "primary": {},
-      "items": {
-        "thumbnail": {
-          "type": "Image",
+      "primary": {
+        "section": {
           "config": {
-            "id": "thumbnail",
-            "label": "",
+            "label": "Section Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          },
+          "type": "StructuredText"
+        }
+      },
+      "items": {
+        "logo": {
+          "config": {
+            "label": "Logo",
             "constraint": {},
             "thumbnails": []
-          }
+          },
+          "type": "Image"
         },
-        "more": {
-          "type": "Link",
+        "thumbnail": {
           "config": {
-            "label": "",
-            "id": "more",
+            "label": "Thumbnail",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "link": {
+          "config": {
+            "label": "Link",
             "placeholder": "",
             "allowTargetBlank": true
-          }
+          },
+          "type": "Link"
+        },
+        "title": {
+          "config": {
+            "label": "Title",
+            "placeholder": "Event name",
+            "allowTargetBlank": true,
+            "single": "heading3"
+          },
+          "type": "StructuredText"
+        },
+        "description": {
+          "config": {
+            "label": "Description",
+            "placeholder": "In-sight Observer",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          },
+          "type": "StructuredText"
         }
       }
     }
