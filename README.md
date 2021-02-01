@@ -36,7 +36,7 @@ run the prismic storybook to preview your custom slices:
 npm run storybook
 ```
 
-start Slicemachine to run The Slice Builder for editing the slices:
+run The Slice Builder for editing the slices:
 ```bash
 prismic sm --develop
 ```
