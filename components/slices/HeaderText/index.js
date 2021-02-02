@@ -1,11 +1,11 @@
 import React from 'react';
 import { array, shape } from 'prop-types';
 import { Link, RichText } from 'prismic-reactjs';
-import linkResolver from '../../prismic';
+import { linkResolver } from '../../../prismic';
 
-import htmlSerializer from '../../htmlSerializer';
+import htmlSerializer from '../../../htmlSerializer';
 
-import '../../styles/globals.css';
+import '../../../styles/globals.css';
 
 const MySlice = ({ slice }) => (
   <section className="text-center">
