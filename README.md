@@ -1,6 +1,6 @@
 # Cinzya.gg
 
-This is the repository my personal esports webpage [cinzya.gg](http://cinzya.gg) using [Next.js](https://nextjs.org/) together with the headless CMS [prismic.io](https://prismic.io/).
+This is the repository of my personal esports webpage [cinzya.gg](http://cinzya.gg) using [Next.js](https://nextjs.org/) with the headless CMS [prismic.io](https://prismic.io/).
 
 ---
 
