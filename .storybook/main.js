@@ -1,3 +1,3 @@
 module.exports = {
-  stories: ["../components/slices/**/*.stories.[tj]s"]
+  stories: ["../slices/**/*.stories.[tj]s"]
 }

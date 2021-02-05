@@ -1,6 +1,9 @@
 import React from 'react';
 import { array, shape } from 'prop-types';
 import { RichText } from 'prismic-reactjs';
+import { linkResolver } from '../../prismic';
+
+import htmlSerializer from './../../htmlSerializer';
 
 const section = {
   maxWidth: '600px',
