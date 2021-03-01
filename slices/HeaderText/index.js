@@ -5,25 +5,18 @@ import { linkResolver } from '../../prismic';
 
 import htmlSerializer from './../../htmlSerializer';
 
-import '../../styles/globals.css';
+// import '../../styles/globals.css';
 
 const MySlice = ({ slice }) => (
-  <section className="text-center">
+  <section className="hero text-center">
     {
       slice.primary.portrait ?
       <img className="rounded-full mx-auto" src={slice.primary.portrait.url} alt={slice.primary.portrait.alt} />
       : <p>Here should be an image</p>
     }
-    {
-      slice.primary.title ?
-      <RichText htmlSerializer={htmlSerializer} render={slice.primary.title}/>
-      : <h2 className="text-center">Template slice, update me!</h2>
-    }
-    {
-      slice.primary.slogan ?
-      <RichText htmlSerializer={htmlSerializer} render={slice.primary.slogan}/>
-      : <h1>Template slice, update me!</h1>
-      }
+      <h1 className="text-3xl">{RichText.asText(slice.primary.title) || "Template slice, update me!"}</h1>
+
+      <h2 className="text-7xl">{RichText.asText(slice.primary.slogan) || "Template slice, update me!"}</h2>
     {
       slice.primary.description ?
       <RichText htmlSerializer={htmlSerializer} render={slice.primary.description}/>
