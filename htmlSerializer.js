@@ -18,7 +18,7 @@ const htmlSerializer = function(type, element, content, children, key) {
       return React.createElement('h1', propsWithUniqueKey(props, key), children);
       
     case Elements.heading2: // Heading 2
-      props = { className: 'text-3xl' };
+      props = { className: 'text-3xl mb-12' };
       return React.createElement('h2', propsWithUniqueKey(props, key), children);
       
     case Elements.heading3: // Heading 3

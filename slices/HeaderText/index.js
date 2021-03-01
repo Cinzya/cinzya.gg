@@ -5,13 +5,11 @@ import { linkResolver } from '../../prismic';
 
 import htmlSerializer from './../../htmlSerializer';
 
-import '../../styles/globals.css';
-
 const MySlice = ({ slice }) => (
   <section className="text-center">
     {
       slice.primary.portrait ?
-      <img className="rounded-full mx-auto" src={slice.primary.portrait.url} alt={slice.primary.portrait.alt} />
+      <img className="rounded-full mx-auto mb-10" src={slice.primary.portrait.url} alt={slice.primary.portrait.alt} />
       : <p>Here should be an image</p>
     }
     {

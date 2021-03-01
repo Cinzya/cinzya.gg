@@ -18,12 +18,12 @@ const h2 = {
 const MySlice = ({ slice }) => (
   <section style={section}>
     {
-      slice.primary.title ?
-      <RichText render={slice.primary.title}/>
-      : <h2 style={h2}>Template slice, update me!</h2>
+      slice.primary.section ?
+      <RichText render={slice.primary.section}/>
+      : <h2 style={h2}>Clients I've worked with</h2>
     }
     {
-      slice.primary.description ?
+      slice.primary.logo && slice.primary.thumbnail ?
       <RichText render={slice.primary.description}/>
       : <p>start by editing this slice from inside the SliceMachine builder!</p>
     }
