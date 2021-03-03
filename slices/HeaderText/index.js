@@ -8,7 +8,7 @@ import htmlSerializer from "./../../htmlSerializer";
 // import '../../styles/globals.css';
 
 const MySlice = ({ slice }) => (
-  <section className="hero text-center">
+  <section className="hero text-center container mx-auto">
     {slice.primary.portrait ? (
       <img
         className="rounded-full mx-auto mb-10"
@@ -22,7 +22,7 @@ const MySlice = ({ slice }) => (
       {RichText.asText(slice.primary.title) || "Template slice, update me!"}
     </h1>
 
-    <h2 className="text-7xl">
+    <h2 className="text-7xl mb-10">
       {RichText.asText(slice.primary.slogan) || "Template slice, update me!"}
     </h2>
     {slice.primary.description ? (
@@ -35,7 +35,7 @@ const MySlice = ({ slice }) => (
     )}
     {slice.primary.contact ? (
       <a
-        className="my-7 rounded-md bg-purple-800 text-white md:py-4 md:px-10"
+        className="rounded-full my-16 hover:bg-gray-300 text-xs uppercase bg-white text-black inline-block w-32 h-11 leading-10"
         href={Link.url(slice.primary.contact, linkResolver)}
       >
         Go to page
