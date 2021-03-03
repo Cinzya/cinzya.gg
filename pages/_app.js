@@ -20,7 +20,7 @@ export default class App extends NextApp {
   render() {
     const { Component, pageProps, props } = this.props;
     return (
-      <ThemeProvider theme={customTheme}>
+      <ThemeProvider theme={theme}>
         <BaseStyles>
           <Component {...pageProps} menu={props.menu} />
         </BaseStyles>
