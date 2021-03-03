@@ -18,7 +18,7 @@ const MySlice = ({ slice }) => (
     ) : (
       <p>Here should be an image</p>
     )}
-    <h1 className="text-3xl">
+    <h1 className="text-3xl mb-12">
       {RichText.asText(slice.primary.title) || "Template slice, update me!"}
     </h1>
 

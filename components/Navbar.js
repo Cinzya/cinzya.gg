@@ -1,17 +1,17 @@
 import React from "react";
-import { RichText } from 'prismic-reactjs'
-import DocLink from "./DocLink"
+import { RichText } from "prismic-reactjs";
+import DocLink from "./DocLink";
 
 const Navbar = ({ menuLinks = [] }) => (
-    <header className="site-header">
-      <Links menuLinks={menuLinks} />
-    </header>
+  <header className="site-header">
+    <Links menuLinks={menuLinks} />
+  </header>
 );
 
-const Links = ({menuLinks}) => {
+const Links = ({ menuLinks }) => {
   if (menuLinks) {
     return (
-      <nav class="my-10">
+      <nav className="my-10">
         <ul>
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
@@ -22,9 +22,9 @@ const Links = ({menuLinks}) => {
           ))}
         </ul>
       </nav>
-    )
+    );
   }
-  return null
-}
+  return null;
+};
 
 export default Navbar;
