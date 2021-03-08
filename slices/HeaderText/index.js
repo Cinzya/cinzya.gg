@@ -4,6 +4,7 @@ import { Link, RichText } from "prismic-reactjs";
 import { linkResolver } from "../../prismic";
 
 import htmlSerializer from "./../../htmlSerializer";
+import { Divider } from "theme-ui";
 
 // import '../../styles/globals.css';
 
@@ -18,7 +19,7 @@ const MySlice = ({ slice }) => (
     ) : (
       <p>Here should be an image</p>
     )}
-    <h1 className="text-3xl mb-12">
+    <h1 className="text-2xl mb-12">
       {RichText.asText(slice.primary.title) || "Template slice, update me!"}
     </h1>
 
@@ -26,10 +27,12 @@ const MySlice = ({ slice }) => (
       {RichText.asText(slice.primary.slogan) || "Template slice, update me!"}
     </h2>
     {slice.primary.description ? (
-      <RichText
-        htmlSerializer={htmlSerializer}
-        render={slice.primary.description}
-      />
+      <div className="w-2/3 mx-auto">
+        <RichText
+          htmlSerializer={htmlSerializer}
+          render={slice.primary.description}
+        />
+      </div>
     ) : (
       <p>start by editing this slice from inside the SliceMachine builder!</p>
     )}

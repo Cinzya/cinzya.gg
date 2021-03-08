@@ -11,7 +11,7 @@ const Navbar = ({ menuLinks = [] }) => (
 const Links = ({ menuLinks }) => {
   if (menuLinks) {
     return (
-      <nav className="my-10">
+      <nav className="m-8 text-right">
         <ul>
           {menuLinks.map((menuLink, index) => (
             <li key={`menulink-${index}`}>
