@@ -7,7 +7,7 @@ const Layout = ({ menu, children }) => {
   return (
     <div>
       <Head>
-        <title>Slice Machine - NextJS</title>
+        <title>Cinzya Production</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar menuLinks={menuLinks} />
