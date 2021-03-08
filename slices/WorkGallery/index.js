@@ -2,7 +2,7 @@ import React from "react";
 import { array, shape } from "prop-types";
 import { RichText } from "prismic-reactjs";
 
-import ProjectList from "./../../components/ProjectList";
+import ProjectList from "./components/ProjectList";
 
 const MySlice = ({ slice }) => (
   <section className="text-center">
