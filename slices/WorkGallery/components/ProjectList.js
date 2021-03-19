@@ -1,34 +1,22 @@
 import React from "react";
-import ReactAnime from 'react-animejs';
-const {Anime, stagger} = ReactAnime;
 
 const ProjectList = ({ events }) => {
   return (
     <div className="flex flex-wrap">
-      {events.map((event) => (
-        <Anime
-        style={{ width: 100 }}          
-        _onMouseEnter={[
-          {
-            targets: ".logo",
-            backgroundColor: `rgba(255,0,22,0.5)`,
-            easing: "linear"
-          }
-        ]}>
-          <div
-            className="w-1/2 flex project"
-            style={{ backgroundImage: event.thumbnail.url || "" }}
+      {events.map((event, index) => (
+          <div key={index}
+            className="w-1/2 flex justify-center project bg-cover bg-center"
+            style={{ backgroundImage: `url(${event.thumbnail.url})` || "" }}
             >
-              <img
-                className="w-10/12 h-auto logo"
+              <img key={index}
+                className="logo bg-transparent w-7/12 my-16"
                 src={event.logo.url}
                 alt={event.logo.alt || ""}
               ></img>
-              <div className="title" style={{ display: "none" }}>
+              <div key={index} className="title" style={{ display: "none" }}>
                 <h3>{event.title[0].text}</h3>
               </div>
           </div>
-        </Anime>
       ))}
     </div>
   );
