@@ -19,15 +19,15 @@ const MySlice = ({ slice }) => (
     ) : (
       <p>Here should be an image</p>
     )}
-    <h1 className="text-2xl mb-12">
+    <h1 className="text-2xl mb-10 font-semibold">
       {RichText.asText(slice.primary.title) || "Template slice, update me!"}
     </h1>
 
-    <h2 className="text-7xl mb-10">
+    <h2 className="text-7xl mb-16 font-black leading-tight">
       {RichText.asText(slice.primary.slogan) || "Template slice, update me!"}
     </h2>
     {slice.primary.description ? (
-      <div className="w-2/3 mx-auto">
+      <div className="w-2/3 mx-auto text-lg text-gray-300 leading-loose">
         <RichText
           htmlSerializer={htmlSerializer}
           render={slice.primary.description}
@@ -38,7 +38,7 @@ const MySlice = ({ slice }) => (
     )}
     {slice.primary.contact ? (
       <a
-        className="rounded-full my-16 hover:bg-gray-300 text-xs uppercase bg-white text-black inline-block w-32 h-11 leading-10"
+        className="rounded-full font-bold my-16 hover:bg-gray-400 text-xs uppercase bg-white text-black inline-block w-32 h-11 leading-10"
         href={Link.url(slice.primary.contact, linkResolver)}
       >
         Go to page
