@@ -4,7 +4,7 @@ import NextApp from "next/app";
 import { theme } from "essential-slices";
 import { ThemeProvider, BaseStyles } from "theme-ui";
 import { Client } from "../prismic";
-import "../styles/globals.css";
+import "../styles/globals.scss";
 
 export default class App extends NextApp {
   static async getInitialProps(appCtx) {
