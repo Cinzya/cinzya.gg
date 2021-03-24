@@ -18,13 +18,16 @@
             "label": "Title",
             "placeholder": "This is where it all begins..."
           }
-        },
-        "description": {
-          "type": "StructuredText",
+        }
+      },
+      "items": {
+        "Logo": {
+          "type": "Image",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "id": "Logo",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       }
