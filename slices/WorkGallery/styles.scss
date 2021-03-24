@@ -1,8 +1,14 @@
-.logo {
-    transition: 0.5s;
+.project {
     opacity: 1;
 
-    &:hover {
+    .active {
+        transition: 0.5s;
+        opacity: 1;
+    
+    }
+    
+    .hide {
+        transition: 0.5s;
         opacity: 0;
     }
 }
