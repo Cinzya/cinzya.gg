@@ -17,6 +17,11 @@ a {
 
 * {
   box-sizing: border-box;
-  background-color: #0D0E10;
-  color: #FFFFFF;
+  background-color: #0d0e10;
+  color: #ffffff;
+}
+
+.logo {
+  -webkit-filter: drop-shadow(0 0 0.75rem #222);
+  filter: drop-shadow(0 0 0.75rem #222);
 }
